@@ -97,11 +97,14 @@ const getUserCoordinates = () => {
 const changeMode=()=>{
     if(toggler.innerHTML=="Light Mode"){
         toggler.innerHTML="Dark Mode";
-        document.querySelector("body").setAttribute("class","light")
+        document.querySelector("body").setAttribute("class","light");
+        document.querySelector("#favicon").setAttribute("href","icons/light.png");
+
     }
     else{
         toggler.innerHTML="Light Mode";
-        document.querySelector("body").setAttribute("class","dark")
+        document.querySelector("body").setAttribute("class","dark");
+        document.querySelector("#favicon").setAttribute("href","icons/dark.png")
     }
 }
 
